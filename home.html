@@ -26,10 +26,11 @@
 
                     <div class="divider"></div>
 
-                    <!-- user action button -->
+                    <!-- user action buttons -->
                     <div>
                         <button id="btn-show-add-money-form" class="btn btn-lg">Add Money</button>
                         <button id="btn-show-cash-out" class="btn btn-lg">Cashout</button>
+                        <button id="btn-show-transactions" class="btn btn-lg">Transactions</button>
                     </div>
 
                     <div class="divider"></div>
@@ -77,15 +78,26 @@
                         </form>
                     </div>
                     <!-- cash out ends -->
+
+                    <!-- transaction section start -->
+                     <div id="transaction-section" class="hidden">
+                        <h2 class="text-3xl text-center">Transaction History</h2>
+                        <div id="transaction-container">
+
+                        </div>
+                     </div>
+                    <!-- transaction section  end-->
                 </div>
             </div>
         </div>
     </main>
 
     <!-- js file -->
+     <script src="js/utilities.js"></script>
      <script src="js/home.js"></script>
      <script src="js/cashOut.js"></script>
      <script src="js/features.js"></script>
+
 
 </body>
 

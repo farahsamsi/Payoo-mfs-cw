@@ -29,6 +29,16 @@ document
 
       // step 6 : update the balance in UI/DOM
       document.getElementById("account-balance").innerText = newBalance;
+
+       // add to transaction history
+       const div = document.createElement("div");
+       div.classList.add("bg-yellow-300");
+       div.innerHTML = `
+         <h4 class="text-2xl font-bold"> Add Money </h4>  
+         <p>${addMoneyNumber} is added. New Balance ${newBalance}</p>
+       `;
+ 
+       document.getElementById('transaction-container').appendChild(div);
     } else {
       alert("Failed to add money");
     }
