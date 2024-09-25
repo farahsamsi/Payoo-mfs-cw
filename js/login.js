@@ -19,7 +19,8 @@ document
     // this temporary, should not do like this
     if (phoneNumber === "5" && pinNumber === "1234") {
       console.log("You are logged in");
-      window.location.href = '/27.Payoo-mfs-cw/home.html'
+      window.location.href = './home.html';
+      // window.location.href = "/27.Payoo-mfs-cw/login.html"
     } else {
       alert("Wrong phone number or PIN");
     }
